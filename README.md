@@ -47,7 +47,8 @@ valid or not.
 
 ### `const salt = eddsa.salt()`
 
-Generate a 20 byte random salt.
+Generate a 64 byte random salt. This is equal to the block size of SHA-1, the
+hash function used by the DHT.
 
 ## Install
 
