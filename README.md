@@ -29,7 +29,21 @@ dht.put({
 
 ## API
 
-### ``
+### `const { pk, sk } = eddsa.keygen([sk])`
+
+Derive a Ed25519 keypair, optionally deriving the `pk` from an exisiting `sk`.
+Returns `pk` as Public Key, `sk` as Secret Key. The `sk` here is not compatible
+with `ed25519-supercop`, as the encoding is different, but signatures will be
+the same.
+
+### `const sig = eddsa.sign(msg, sk)`
+
+Sign `Buffer` `msg` with `sk` returning the signature as a `Buffer`
+
+### `const valid = eddsa.verify(sig, msg, pk)`
+
+Verify `Buffer` `sig` against `Buffer` `msg` with `pk` returning boolean whether
+valid or not.
 
 ## Install
 
