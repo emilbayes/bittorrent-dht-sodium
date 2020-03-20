@@ -45,6 +45,10 @@ Sign `Buffer` `msg` with `sk` returning the signature as a `Buffer`
 Verify `Buffer` `sig` against `Buffer` `msg` with `pk` returning boolean whether
 valid or not.
 
+### `const salt = eddsa.salt()`
+
+Generate a 20 byte random salt.
+
 ## Install
 
 ```sh

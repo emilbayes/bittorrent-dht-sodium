@@ -17,5 +17,10 @@ module.exports = {
     }
 
     return { pk, sk }
+  },
+  salt () {
+    const s = Buffer.alloc(20)
+    sodium.randombytes_buf(s)
+    return s
   }
 }
