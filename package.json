@@ -1,0 +1,31 @@
+{
+  "name": "bittorrent-dht-sodium",
+  "version": "0.0.0",
+  "description": "Sodium wrapper for working with BEP44 on bittorrent-dht",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "sodium-native": "^3.0.0"
+  },
+  "devDependencies": {
+    "standard": "^14.3.3",
+    "tape": "^4.13.2"
+  },
+  "scripts": {
+    "pretest": "standard",
+    "test": "tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emilbayes/bittorrent-dht-sodium.git"
+  },
+  "keywords": [],
+  "author": "Emil Bay <github@tixz.dk>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emilbayes/bittorrent-dht-sodium/issues"
+  },
+  "homepage": "https://github.com/emilbayes/bittorrent-dht-sodium#readme"
+}
