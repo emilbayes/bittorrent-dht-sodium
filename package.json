@@ -1,6 +1,6 @@
 {
   "name": "bittorrent-dht-sodium",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Sodium wrapper for working with BEP44 on bittorrent-dht",
   "main": "index.js",
   "publishConfig": {
