@@ -14,5 +14,6 @@ dht.put({
     return eddsa.sign(msg, keys.sk)
   }
 }, function (err, hash) {
+  if (err) throw err
   // ...
 })
